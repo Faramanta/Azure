@@ -45,17 +45,20 @@ body {
 }
 
 h1 {
-    font-size: 48px;
     font-family: 'wf_SegoeUILight';
+    font-size: 48px;
     line-height: 56px;
     font-weight: lighter;
     color: @color-white;
 }
 
 h2 {
+    font-family: 'wf_SegoeUILight';
     font-size: 24px;
     line-height: 30px;
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .container {
@@ -128,3 +131,64 @@ h2 {
     width: 50%;
 }
 
+.main {
+    background-image: url("../img/clouds-main.png");
+    background-repeat: no-repeat;
+    background-position: center 70px;
+    padding-top: 25px;
+}
+
+.liked-solution__item {
+    width: 199px;
+    margin-right: 48px;
+    margin-bottom: 35px;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.liked-solution__item:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.liked-solution__img,
+.liked-solution__item:hover .liked-solution__img {
+    background-image: url("../img/logo-sprite.png");
+    background-repeat: no-repeat;
+    height: 115px;
+    width: 199px;
+    box-shadow: 0 0 0 2px @color-light-grey;
+}
+
+.liked-solution__item:hover .liked-solution__img {
+    box-shadow: 0 0 0 3px @color-green;
+}
+
+.solution__wowza {
+    background-position: -32px -25px;
+}
+
+.liked-solution__item:hover .solution__wowza {
+    background-position: -32px -154px;
+}
+
+.solution__kaspersky {
+    background-position: -248px -26px;
+}
+
+.liked-solution__item:hover .solution__kaspersky {
+    background-position: -248px -150px;
+}
+
+
+
+
+
+.liked-solution__title {
+    color: @color-dark-text;
+}
+
+
+.liked-solution__item:hover .liked-solution__title {
+    color: @color-green;
+}
