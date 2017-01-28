@@ -29,19 +29,14 @@
     font-style: normal;
 }
 
-html {
-
-}
- 
 body {
-
-    background: @color-white;
-    color: @color-dark-text;
-    font-family: 'wf_SegoeUINormal';
-    font-size: 18px;
-    line-height: 24px;
     margin: 0 auto;
     min-width: 375px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'wf_SegoeUINormal';
+    color: @color-dark-text;
+    background: @color-white;
 }
 
 .clearfix::after{
@@ -58,21 +53,22 @@ body {
 }
 
 h1 {
-    font-family: 'wf_SegoeUILight';
     font-size: 47px;
     line-height: 41px;
     font-weight: lighter;
+    font-family: 'wf_SegoeUILight';
     color: @color-white;
 }
 
 h2 {
-    font-family: 'wf_SegoeUILight';
+
+    margin-bottom: 50px;
     font-size: 47px;
     line-height: 56px;
     font-weight: bold;
+    font-family: 'wf_SegoeUILight';
     text-align: center;
     letter-spacing: -0.2px;
-    margin-bottom: 50px;
 }
 
 
@@ -95,23 +91,23 @@ h2 {
 }
 
 .logo {
-	float: left;
-    display: inline-block;
+	display: inline-block;
     vertical-align: middle;
+    float: left;
 }
 
 .social {
-	float: right;
     display: inline-block;
     vertical-align: middle;
+    float: right;
 }
 
 .social__paragraph {
+    display: inline-block;
+    vertical-align: middle;
     margin: -8px 11px 0 0;
     font-size: 16px;
     color: @color-grey-text;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .social__btn {
@@ -123,20 +119,20 @@ h2 {
 }
 
 .social__btn-fb {
-    background: url("../img/social-sprite.png") no-repeat -10px -44px;
     margin-right: 5px;
+    background: url("../img/social-sprite.png") no-repeat -10px -44px;
 }
 
 .social__btn-vk {
-    background: url("../img/social-sprite.png") no-repeat -51px -44px;
     margin-right: 3px;
+    background: url("../img/social-sprite.png") no-repeat -51px -44px;
 }
 
 .header__paragraph {
-    color: @color-white;
     width: 50%;
     margin-bottom: 24px;
     margin-top: 19px;
+    color: @color-white;
 }
 
 .header__img {
@@ -147,31 +143,31 @@ h2 {
 }
 
 .main {
+    padding-top: 18px;
     background-image: url("../img/clouds-main.png");
     background-repeat: no-repeat;
     background-position: center 89px;
-    padding-top: 18px;
 }
 
 .liked-solution--justify {
     text-align: justify;
+    -moz-text-align-last: justify;
     text-align-last: justify;
 }
 
 .liked-solution__item {
-    width: 201px;
-    
     display: inline-block;
     vertical-align: top;
+    width: 201px;
     margin-top: 39px;
-    }
+}
 
  
 .liked-solution__img {
-    background-image: url("../img/logo-sprite.png");
-    background-repeat: no-repeat;
     width: 201px;
     height: 118px;
+    background-image: url("../img/logo-sprite.png");
+    background-repeat: no-repeat;
     box-shadow: 0 0 0 2px @color-light-grey;
 }
 
@@ -246,11 +242,12 @@ h2 {
 }
 
 .liked-solution__title {
-    color: @color-dark-text;
-    font-size: 22px;
     margin-top: 19px;
+    font-size: 22px;
     text-align: left;
+    -moz-text-align-last: left;
     text-align-last: left;
+    color: @color-dark-text;
 }
 
 .liked-solution__item:hover .liked-solution__title {
@@ -258,9 +255,9 @@ h2 {
     }
 
 .store {
-    background: @color-dark-blue;
     margin-bottom: 47px;
     margin-top: 81px;
+    background: @color-dark-blue;
 }
 
 .store__container {
@@ -270,8 +267,9 @@ h2 {
 .store__img {
     display: inline-block;
     vertical-align: middle;
+    width: 18%;
     margin-right: 3%;
-    width: 18%
+
 }
 
 .store__paragraph {
@@ -282,23 +280,22 @@ h2 {
 }
 
 .store__link {
+    font-weight: bold;
     color: @color-green;
     text-decoration: none;
-    font-weight: bold;
 }
 
-.resources {
-    h2 {
-        text-align: left;
-    }
+.resources h2 {
+    text-align: left;
 }
 
 .resources__list {
-    list-style: none;
     padding: 0;
     margin-bottom: 92px;
     text-align: justify;
+    -moz-text-align-last: justify;
     text-align-last: justify;
+    list-style: none;
 }
 
 .resources__item {
@@ -311,18 +308,19 @@ h2 {
 
 .resources__link {
     display: block;
-    border: 2px solid @color-dark-blue;
-    color: @color-dark-blue;
     padding: 10px 10px 13px 35px;
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 0.4px;
     text-align: left;
+    -moz-text-align-last: left;
     text-align-last: left;
+    color: @color-dark-blue;
+    border: 2px solid @color-dark-blue;
     &:hover {
-        background: @color-green;
-        border: 2px solid @color-green;
         color: @color-white;
+        border: 2px solid @color-green;
+        background: @color-green;
     }
 }
  
@@ -351,33 +349,32 @@ h2 {
 }
 
 .how-buy__list {
-    list-style: none;
-    padding: 0;
     margin-bottom: 30px;
     margin-top: 85px;
+    padding: 0;
     text-align: center;
+    list-style: none;
 }   
 
 .how-buy__item {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    text-align: center;
-    
     width: 13%;
     margin-right: 8%;
+    text-align: center;
     &:last-child {
         margin-right: 0;
     }
     &::after {
-        position: absolute;
-        content: "";
-        display: block;
-        width: 130%;
-        height: 2px;
-        background: @color-blue;
-        top: 40px;
-        left: 80px;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 130%;
+    height: 2px;
+    top: 40px;
+    left: 80px;
+    background: @color-blue;
     }
     &:last-child::after {
         display: none;
@@ -385,34 +382,38 @@ h2 {
 }
 
 .how-buy__number {
-    background: @color-blue;
-    color: @color-white;
-    border-radius: 50%;
     width: 81px;
     height: 81px;
+    margin: 0 auto;
     font-size: 47px;
     line-height: 76px;
-    margin: 0 auto;
+    color: @color-white;
+    background: @color-blue;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 1020px) {
     .liked-solution__title {
         font-size: 1.1em;
     }
+
     .resources__link {
         padding: 10px 10px 13px 1.7em;
-        text-align: left;
-        text-align-last: left;
         font-size: 0.9em;
+        text-align: left;
+        -moz-text-align-last: left;
+        text-align-last: left;
     }
+
     .resources__list {
         text-align: justify;
+        -moz-text-align-last: justify;
         text-align-last: justify;
     }
+
     .store__paragraph {
         font-size:  0.9em;
     }
-
 }
 
 @media screen and (max-width: 980px) {
@@ -420,6 +421,7 @@ h2 {
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
     .header__img {
         width: 39%;
     }
@@ -441,17 +443,18 @@ h2 {
     }
 
     .liked-solution__item {
+        display: inline-block;
+        vertical-align: top;
         width: 201px;
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 15px;    
+        margin-top: 15px;
     }
-    
+
     .liked-solution__title {
+        margin-top: 10px;
         font-size: 1em;
         text-align: center;
+        -moz-text-align-last: center;
         text-align-last: center;
-        margin-top: 10px;
     }
 
     .store {
@@ -460,23 +463,23 @@ h2 {
 
     .resources__link {
         padding: 10px 10px 13px 1.65em;
-        text-align: left;
-        text-align-last: left;
         font-size: 0.85em;
+        text-align: left;
+        -moz-text-align-last: left;
+        text-align-last: left;
     }
-
 }
 
 @media screen and (max-width: 877px) {
     h2 {
-            font-size: 2.1em;
+        font-size: 2.1em;
     }
 
     .liked-solution--justify {
         text-align: center;
+        -moz-text-align-last: center;
         text-align-last: center;
     }
-
     
     .resources__link {
         padding: 10px 10px 13px 1.3em;
@@ -509,7 +512,6 @@ h2 {
     .how-buy__paragraph {
         word-wrap: break-word;
     }
-
 }
 
 @media screen and (max-width: 715px) {
@@ -523,14 +525,13 @@ h2 {
     }
 
     h1 {
-            font-size: 2.1em;
+        font-size: 2.1em;
     }
 
     h2 {
         margin-bottom: 5px;
         margin-top: 20px;
         font-size: 1.5em;
-        
     }
 
     .resources h2 {
@@ -570,7 +571,7 @@ h2 {
     }
 
     .how-buy__number {
-            width: 70px;
+        width: 70px;
         height: 70px;
         font-size: 38px;
         line-height: 65px;
@@ -588,13 +589,12 @@ h2 {
     .how-buy__paragraph {
         font-size: 0.8em;
     }
-
 }
 
 @media screen and (max-width: 555px) {
     .how-buy__item {
-        width: 80%;
         display: block;
+        width: 80%;
         margin: 0 auto;
         text-align: left;
     }
@@ -610,20 +610,18 @@ h2 {
     .how-buy__number {
         display: inline-block;
         width: 40px;
+        margin-right: 10px;
         height: 40px;
         font-size: 18px;
         line-height: 40px;
         text-align: center;
-        margin-right: 10px;
-
     }
 
     .how-buy__paragraph {
         display: inline-block;
-        font-size: 0.85em;
         width: 70%;
+        font-size: 0.85em;
     }
-
 }
 
 @media screen and (max-width: 430px) {
@@ -637,6 +635,7 @@ h2 {
     .h1{
         font-size: 2em;
     }
+
     .header__paragraph {
         width: 90%;
     }
